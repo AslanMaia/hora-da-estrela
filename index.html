@@ -22,7 +22,7 @@ header{max-width:34rem;margin:0 0 3rem}
 h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,9vw,4rem);line-height:1;letter-spacing:-.01em;margin:0 0 .6rem}
 .by{font-family:var(--hand);font-size:1.35rem;color:var(--pencil);margin:0 0 1.25rem}
 .how{margin:0 0 1rem}
-.if-hover{display:none}@media (hover:hover) and (pointer:fine){.if-hover{display:inline}.if-touch{display:none}}
+
 .edition{font-size:.85rem;color:var(--pencil);margin:0}
 .spread{position:relative;margin:0 0 2.5rem}
 .page,.letter{position:relative;background:var(--page);box-shadow:var(--shadow);max-width:34rem;padding:3.25rem var(--pad);font-family:var(--serif);font-size:1.18rem;line-height:1.6}
@@ -36,7 +36,9 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,9vw,4rem);lin
 .passage{position:relative;margin:.3em 0}
 .numeral{position:absolute;top:.05em;font-family:var(--hand);font-size:1.5rem;line-height:1;color:var(--pencil)}
 .page.odd .numeral{right:calc(-1 * var(--pad) + .8rem)}.page.even .numeral{left:calc(-1 * var(--pad) + .8rem)}
-.quote{margin:0}
+.quote{margin:0;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.note p,.letter p,.how,.edition{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.letter p.sign{text-align:right}
 .hl{all:unset;cursor:pointer;color:inherit;font:inherit;display:inline}
 .hl>span{-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .08em;background:linear-gradient(transparent 36%,color-mix(in srgb,var(--hl) calc(var(--hl-a)*100%),transparent) 36%,color-mix(in srgb,var(--hl) calc(var(--hl-a)*100%),transparent) 94%,transparent 94%);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--pencil) 55%,transparent);text-decoration-thickness:1px;text-underline-offset:.22em}
 .hl[aria-expanded="true"]>span{text-decoration-color:var(--ink);text-decoration-thickness:2px}
@@ -66,8 +68,8 @@ h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,9vw,4rem);lin
 <main>
 <header>
 <h1>A hora da estrela</h1>
-<p class="by">anotações de leitura do Aslan</p>
-<p class="how">Cada página abaixo traz um trecho que grifei no livro. <span class="if-hover">Passe o mouse sobre um grifo, ou clique nele,</span><span class="if-touch">Toque em um grifo</span> para ler o que anotei.</p>
+<p class="by">anotações de leitura</p>
+<p class="how">Cada página abaixo traz um trecho que eu marquei no livro. Clique para ler o que anotei.</p>
 <p class="edition">Clarice Lispector, <em>A hora da estrela</em>, edição comemorativa. Rio de Janeiro: Rocco, 2019. Posfácio de Paulo Gurgel Valente. ISBN 978-65-5532-035-0. As páginas citadas abaixo seguem esta edição.</p>
 </header>
 <article class="spread" id="p13"><div class="page odd"><div class="running" aria-hidden="true"><span class="pn">13</span><span class="rt">a hora da estrela</span></div><h2 class="sr">Página 13</h2><div class="lines" aria-hidden="true"><span class="ln" style="width:94%"></span><span class="ln" style="width:100%"></span><span class="ln" style="width:100%"></span><span class="ln" style="width:92%"></span><span class="ln" style="width:44%"></span></div><div class="passage"><span class="numeral" aria-hidden="true">I</span><p class="quote"><button class="hl" type="button" aria-expanded="false" aria-controls="n-i"><span>Se tivesse a tolice de se perguntar “quem sou eu?” cairia estatelada e em cheio no chão.</span></button></p><aside class="note" id="n-i" aria-label="Anotação I"><span class="note-num">I</span><p>Todo aquele que se perguntar seriamente “quem sou eu” eventualmente vai cair no chão.</p></aside></div><div class="lines" aria-hidden="true"><span class="ln" style="width:93%"></span><span class="ln" style="width:41%"></span></div><div class="passage"><span class="numeral" aria-hidden="true">II</span><p class="quote"><button class="hl" type="button" aria-expanded="false" aria-controls="n-ii"><span>É que “quem sou eu?” provoca necessidade. E como satisfazer a necessidade? Quem se indaga é incompleto.</span></button></p><aside class="note" id="n-ii" aria-label="Anotação II"><span class="note-num">II</span><p>Discordo. Quem se indaga está disposto a pisar onde o chão pode ceder, enquanto outros permanecem imóveis, torcendo para que nenhuma rachadura apareça.</p></aside></div><div class="lines" aria-hidden="true"><span class="ln" style="width:91%"></span><span class="ln" style="width:98%"></span><span class="ln" style="width:93%"></span><span class="ln" style="width:94%"></span><span class="ln" style="width:31%"></span></div></div></article>
